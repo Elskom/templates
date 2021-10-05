@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Els_kom org.",
+  "classifications": [ "Els_kom", "KOM Plugin", "C#10", "Code" ],
+  "identity": "Elskom.KOMPluginClass",
+  "name": "Els_kom: KOM Plugin class",
+  "shortName": "ElskomKOMPluginClass",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  }
+}

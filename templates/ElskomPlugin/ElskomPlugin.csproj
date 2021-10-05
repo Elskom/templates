@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;net5.0</TargetFrameworks>
+    <UseElskomSdk>true</UseElskomSdk>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IntermediateOutputPath>obj\$(Configuration)\$(ProjectName)</IntermediateOutputPath>
+    <Version>1.0.0.0</Version>
+    <IsPackable>false</IsPackable>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Copyright>Copyright © 2021</Copyright>
+    <Company>Els_kom org.</Company>
+    <Authors>Els_kom org.</Authors>
+    <DebugType>embedded</DebugType>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!--
+    We must disable this because of the fact that plugins should output to
+    the same structure of folders as the application they are compiled for.
+    -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\$(Configuration)\$(TargetFramework)\plugins\</OutputPath>
+    <!--
+    We must ensure no dependencies get copied.
+    -->
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DebugSymbols>true</DebugSymbols>
+    <ErrorReport>none</ErrorReport>
+    <!--
+    Turns off reference assembly generation
+    see: https://docs.microsoft.com/en-us/dotnet/standard/assembly/reference-assemblies
+    -->
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
+    <None Remove="appveyor-deploy.yml" />
+    <None Remove="appveyor.yml" />
+    <None Remove="build.log" />
+    <None Remove="LICENSE" />
+    <None Remove="README.md" />
+  </ItemGroup>
+
+</Project>

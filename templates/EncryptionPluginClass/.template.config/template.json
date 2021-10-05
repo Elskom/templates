@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Els_kom org.",
+  "classifications": [ "Els_kom", "Encryption Plugin", "C#10", "Code" ],
+  "identity": "Elskom.EncryptionPluginClass",
+  "name": "Els_kom: Encryption Plugin class",
+  "shortName": "ElskomEncryptionPluginClass",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  }
+}

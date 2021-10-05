@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Els_kom org.",
+  "classifications": [ "Els_kom", "Callback Plugin", "C#10", "Code" ],
+  "identity": "Elskom.CallbackPluginClass",
+  "name": "Els_kom: Callback Plugin class",
+  "shortName": "ElskomCallbackPluginClass",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Els_kom org.",
+  "classifications": [ "Els_kom", "Plugin", "C#10" ],
+  "identity": "Elskom.PluginProject",
+  "name": "Els_kom: Plugin",
+  "shortName": "ElskomPlugin",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
