@@ -1,3 +1,16 @@
+queue_rules:
+  - name: default
+    conditions:
+      - -conflict # skip PRs with conflicts
+      - -draft # filter-out GH draft PRs
+      - -closed # filter-out closed GH PRs
+      - base=main
+      - label=automerge
+      - check-success=build
+      - check-success=Codacy Static Code Analysis
+      - check-success=DCO
+      - check-success=WIP
+
 pull_request_rules:
   # for check failures / WIP pending check.
   - name: Add enhancement label
@@ -15,7 +28,7 @@ pull_request_rules:
       - -closed
       - -conflict
       - -label=automerge
-      - author~=^(AraHaan|CatGirlsAreLife|JunichiSama|xioke|Elskom-gitsync
+      - author~=^(AraHaan|CatGirlsAreLife|JunichiSama|xioke|Elskom-gitsync)$
     actions:
       label:
         add:
@@ -66,10 +79,11 @@ pull_request_rules:
       review:
         type: APPROVE
         message: Automatically approving since automerge label was found.
-      merge:
-        strict: smart+fasttrack
-        strict_method: rebase
+      queue:
+        name: default
         method: squash
+        update_method: rebase
+        commit_message: default
 
   - name: Remove automerge label
     conditions:
