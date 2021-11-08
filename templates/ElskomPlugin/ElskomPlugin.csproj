@@ -1,8 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Elskom.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net472;net5.0</TargetFrameworks>
-    <UseElskomSdk>true</UseElskomSdk>
+    <TargetFrameworks>net6.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IntermediateOutputPath>obj\$(Configuration)\$(ProjectName)</IntermediateOutputPath>

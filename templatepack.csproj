@@ -2,12 +2,13 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackageId>Elskom.Sdk.Templates</PackageId>
     <Title>Els_kom Templates</Title>
     <Authors>Els_kom org.</Authors>
     <Description>Templates to use when creating a Plugin for Els_kom.</Description>
     <PackageTags>dotnet-new;templates;Els_kom</PackageTags>
+    <PackageReleaseNotes>Fixed issue where the workload sdk is not properly imported in the project template and does not target the correct version of .NET.</PackageReleaseNotes>
     <TargetFramework>netstandard2.0</TargetFramework>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
